@@ -1,0 +1,83 @@
+:root {
+	--cor-base-azul: #01013A;
+	--cor-base-cinza: #D9D9D9;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+html, body, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#titulo {
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+}
+
+#sub-titulo {
+	padding-left: 50px;
+	padding-bottom: 15px;
+}
+
+.bloco {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.bateria {
+	flex-direction: column;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 2% 5%;
+}
+
+.bateria > p {
+	display: flex;
+}
+
+.bateria > p > span {
+	flex-grow: 1;
+}
+
+.bateria > p > span:nth-child(2) {
+   text-align: right;
+   margin-left: 100px;
+}
+
+.temperatura {
+
+}
+
+.temperatura.low span:nth-child(2) {
+	color: red;
+}
+
+.temperatura.medium span:nth-child(2) {
+	color: orange;
+}
+
+.temperatura.high span:nth-child(2) {
+	color: green;
+}
+
+.carga {
+
+}
+
+.carga.low span:nth-child(2) {
+	color: red;
+}
+
+.carga.medium span:nth-child(2) {
+	color: orange;
+}
+
+.carga.high span:nth-child(2) {
+	color: green;
+}
