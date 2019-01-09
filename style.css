@@ -10,16 +10,21 @@ html, body, * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	justify-content: center;
 }
 
 #titulo {
 	text-align: center;
 	padding: 30px 0px 30px 0px;
+	font-family: 'Staatliches', cursive;
+	font-size: 27px;
 }
 
 #sub-titulo {
-	padding-left: 50px;
 	padding-bottom: 15px;
+	font-family: 'Staatliches', cursive;
+	font-size: 22px;
+	text-align: center;
 }
 
 .bloco {
@@ -35,6 +40,8 @@ html, body, * {
 	border-radius: 5px;
 	padding: 10px;
 	margin: 2% 5%;
+   	-webkit-box-shadow: 5px 5px 0 #C0C0C0;
+   	-moz-box-shadow: 5px 5px 0 #333;
 }
 
 .bateria > p {
@@ -48,6 +55,12 @@ html, body, * {
 .bateria > p > span:nth-child(2) {
    text-align: right;
    margin-left: 100px;
+}
+
+.destaque {
+	font-style: italic;
+	font-size: 17px;
+	font-weight: bold;
 }
 
 .temperatura {
@@ -80,4 +93,20 @@ html, body, * {
 
 .carga.high span:nth-child(2) {
 	color: green;
+}
+
+.linkHistorico {
+  	border: none;
+  	color: white;
+  	padding: 5px 5px;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+
+.texto {
+	color: black;
+	text-align: center;
 }
